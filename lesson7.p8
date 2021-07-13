@@ -1,8 +1,7 @@
 pico-8 cartridge // http://www.pico-8.com
 version 32
 __lua__
-
-
+--lesson7
 function _init()
  cls()
  ball_x=30
@@ -22,7 +21,7 @@ function _init()
 end
 
 function _update()
-	buttpress=false
+	local buttpress=false
 	if btn(0) then
 		--left
 		pad_dx=-5
@@ -60,6 +59,7 @@ function _update()
 	if ball_box(pad_x,pad_y,pad_w,pad_h) then
 		--deal with collision
 		pad_c=8
+		ball_dy=-ball_dy
 	end
 	
 end
