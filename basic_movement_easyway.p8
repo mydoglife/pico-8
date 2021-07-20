@@ -8,7 +8,7 @@ function _update()
 	if (btn(⬅️)) x-=2
 	if (btn(➡️)) x+=2
 	
-	y=mid(0,y,120)
+	y=mid(0,y,120) -this is the limit for 8x8 sprites
 	x=mid(0,x,120)
 
 end
