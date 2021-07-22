@@ -13,6 +13,9 @@ function add_new_bullet(_x,_y,_x2,_y2)
 	y=_y,
 	dx=_x2,
 	dy=_y2,
+--	dx=2,
+--	dy=0,
+--	
 	life=20,
 	draw=function(self)
 		pset(self.x,self.y,6)
@@ -31,7 +34,8 @@ end
 
 function _update()
 	if (btn(4)) or (btn(5)) then 
-		add_new_bullet(gun_x+8,gun_y,(rnd(5)+2),(rnd(3)-2)) 
+		add_new_bullet(gun_x+8,gun_y,(rnd(5)+3),(rnd(3)-2)) 
+		--add_new_bullet(gun_x+8,gun_y,gun_x,gun_y) 
 		sfx(0)
 	end
  
