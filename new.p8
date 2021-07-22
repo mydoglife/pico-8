@@ -8,9 +8,6 @@ end
 function _update()
 
 end
- ---hello
-
-
 
 function _draw()
 
